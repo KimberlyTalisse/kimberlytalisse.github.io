@@ -1,1 +1,1 @@
-this site uses the 'template1-majestic" template
+this site uses the 'template2-chatgptGenerated" template
