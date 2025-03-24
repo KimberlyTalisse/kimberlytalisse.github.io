@@ -1,44 +1,51 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
-        <title>template1-majeticPhoto</title>
-    </head>
-    <body class="bodyMain">
-        <!-- header with category buttons -->
-        <div class="divHeader">
-            <a href="xxx.html">
-                <button class="buttonMain font-caviar">Projects</button>
-            </a>
-            <a href="resume.html">    
-                <button class="buttonMain font-caviar">Resume</button>
-            </a>
-            <a href="bio.html">
-                <button class="buttonMain font-caviar">Bio</button>
-            </a>
-            <a href="xxx.html">
-                <button class="buttonMain font-caviar">Contact</button>
-            </a>
-        </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Kimberly Talisse | Computer Engineer</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="projects.html">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="bio.html">Bio</a>
+    </nav>
+  </header>
 
-        <!-- main banner section with provided photo backdrop -->
-        <div class="divMain "><!-- change source image in 'style.css -> div.Main class' -->
-            <!-- tag that overlays the backdrop with name and whatever else -->
-            <div class="divNameTag font-caviar">
-                <br>
-                <div class="font-caviar fontSize-2 margin-1">Kimberly Talisse</div>
-                <div class="font-caviar fontSize-1 margin-1">Syracuse University <br> Computer Engineering</div>
-            </div>
-            <!-- caption to explain photo -->
-            <div class="font-caviarItalic fontSize-1 margin-1 divCaption">*My trip to Brazil March 2025</div>
-        </div>
+  <section class="hero">
+    <div class="hero-overlay">
+      <h1>Kimberly Talisse</h1>
+      <p class="static-text">Computer Engineer | Embedded Systems Dev | Robotics Enthusiast</p>
+      <span class="caption">*My trip to Brazil, March 2025</span>
+      <div class="scroll-down">&#8595;</div>
+    </div>
+  </section>
 
-        <!-- spot to put school logo -->
-        <div class="divSchoolLogo">
-            <a class="aSchoolLogo" href="https://www.syracuse.edu/" target="_blank">
-                <img src="resources/Syracuse-Orange-Logo-2009.png" class="imgSchoolLogo">
-            </a>     
-        </div>   
-    </body>
+  <section class="social-icons">
+    <a href="https://www.linkedin.com/in/kimberlytalisse/" target="_blank">
+      <img src="resources/linkedin.png" alt="LinkedIn" style="width: 4%;" />
+    </a>
+    <a href="https://www.instagram.com/ktalisse05/?locale=kk-KZ" target="_blank" style="position: absolute; left: 93%;">
+      <img src="resources/instagram.png" alt="Instagram" style="width: 62%;" />
+    </a>
+  </section>
+  <section class="school-logo">
+    <a href="https://www.syracuse.edu/" target="_blank">
+      <img src="resources/Syracuse-Orange-Logo-2009.png" alt="Syracuse University Logo" />
+    </a>
+  </section>
+  <br>
+  <div style="text-align: center; width: 100%;">
+    <a href="mailto:ketaliss@syr.edu" style="font-family:;">
+      <img src="resources/oulook.png" alt="Email" style="width: 4%;" />
+      ketaliss@syr.edu
+    </a>
+  </div>
+  <br>
+  <br>
+  <br>
+</body>
 </html>
