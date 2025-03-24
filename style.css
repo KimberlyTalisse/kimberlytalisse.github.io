@@ -1,0 +1,164 @@
+@font-face {
+  font-family: "caviar";
+  src: url(fonts/CaviarDreams.ttf);
+}
+
+@font-face {
+  font-family: "caviarBold";
+  src: url(fonts/CaviarDreams_Bold.ttf);
+}
+
+@font-face{
+  font-family: 'caviarItalic';
+  src: url(fonts/CaviarDreams_Italic.ttf);
+}
+
+.font-caviar{
+  font-family: 'caviar';
+}
+
+.font-caviarBold{
+  font-family: 'caviarBold';
+}
+
+.font-caviarItalic{
+  font-family: 'caviarItalic';
+}
+
+.fontSize-1{
+  font-size: 20px;
+}
+
+.fontSize-2{
+  font-size: 40px;
+}
+
+.margin-1{
+  margin: 1%;
+}
+
+/*defines style for the one and only body tag*/
+body {
+  margin: 0;
+  position: relative;
+  background-size: cover;          /* scales image to fill the div */
+  background-repeat: no-repeat;    /* prevents tiling */
+  background-position: center;     /* centers the image */
+  z-index: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;          /* scales image to fill the div */
+  background-repeat: no-repeat;    /* prevents tiling */
+  background-position: center;     /* centers the image */
+  background-image: url("resources/jma_wireless_dome.width-1200.jpg"); /* CHANGE SOURCE IMAGE PATH HERE */
+  z-index: -999;
+}
+
+
+.buttonMain {
+  background-color: white;         /* dark gray/black */
+  color: black;                    /* light text */
+  border: 5px solid black;         /* subtle border */
+  padding: 0.75em 1.5em;
+  border-radius: 5px;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: x-large;
+}
+
+.buttonMain:hover {
+  background-color: transparent;
+  border-color: transparent;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* the header div where the top buttons are like projects,
+resume, bio, etc.*/
+.divHeader{
+  display:flex;
+    text-align: center;
+    justify-content: center;
+}
+
+/* the main div class where the background image is shown */
+.divMain{
+    margin: 0px;
+    background-image: url(resources/bannerPhoto.jpg); /* CHANGE SOURCE IMAGE PATH HERE */ 
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    aspect-ratio: 1/.5;
+    display: flex;
+    align-items: center;
+    border: 20px solid black;
+    border-right: 0px;
+    border-left: 0px;
+}
+
+/* div class for optional photo caption */
+.divCaption{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: absolute;
+  height: 40px;
+  top: 0%;
+  left: 70%;
+  color: black;
+  align-content: baseline;
+  width: 100%;
+  background-color: white;
+  margin-top: 50%;
+  margin-bottom: 50px;
+  border: 5px solid black;
+  border-bottom-left-radius:  8px;
+  border-top-left-radius: 8px;
+}
+
+/* the name tag with name and school that goes inside the banner pic*/
+.divNameTag{
+  width: 25%;
+  height: 22%;
+  border: 5px solid black;
+  background-color: white;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+/* classes for school logo */
+.divSchoolLogo{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: transparent;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.aSchoolLogo{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  background-color: transparent;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.imgSchoolLogo{
+  width: 50%;
+  object-fit: contain;
+}
