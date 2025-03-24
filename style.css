@@ -1,9 +1,12 @@
 /* style.css */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@font-face {
+  font-family: 'caviar';
+  src: url(fonts/CaviarDreams.ttf);
+}
 
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: 'caviar', sans-serif;
   color: #00274c;
   background: linear-gradient(to bottom, #fdfbfb, #ebedee);
 }
