@@ -1,0 +1,1 @@
+this site uses the 'template1-majestic" template
