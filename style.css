@@ -4,11 +4,44 @@
   src: url(fonts/CaviarDreams.ttf);
 }
 
+@font-face{
+  font-family: 'caviarBold';
+  src: url(fonts/CaviarDreams_Bold.ttf);
+}
+
+.caviar {
+  font-family: 'caviar', sans-serif;
+}
+
+.caviarBold {
+  font-family: 'caviarBold', sans-serif;
+}
+
+.fontSize-1{
+  font-size: 1.5em;
+}
+
+.fontSize-2{
+  font-size: 2em;
+}
+
+.fontSize-3{
+  font-size: 3em;
+}
+
 body {
   margin: 0;
   font-family: 'caviar', sans-serif;
   color: #00274c;
   background: linear-gradient(to bottom, #fdfbfb, #ebedee);
+}
+
+.hoverEnlarge{
+  transition: transform 0.3s ease;
+}
+
+.hoverEnlarge:hover{
+  transform: scale(1.2);
 }
 
 .header {
