@@ -1,1 +1,0 @@
-this site uses the 'template2-chatgptGenerated" template

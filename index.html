@@ -1,71 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <title>Kimberly Talisse | Computer Engineer</title>
-</head>
-<body>
-  <header class="header">
-    <nav class="nav">
-      <a href="projects.html">Projects</a>
-      <a href="resume.html">Resume</a>
-      <a href="bio.html">Bio</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>template1-majeticPhoto</title>
+    </head>
+    <body class="bodyMain">
+        <!-- header with category buttons -->
+        <div class="divHeader">
+            <a href="xxx.html">
+                <button class="buttonMain font-caviar">Projects</button>
+            </a>
+            <a href="resume.html">    
+                <button class="buttonMain font-caviar">Resume</button>
+            </a>
+            <a href="bio.html">
+                <button class="buttonMain font-caviar">Bio</button>
+            </a>
+            <a href="xxx.html">
+                <button class="buttonMain font-caviar">Contact</button>
+            </a>
+        </div>
 
-  <section class="hero">
-    <div class="hero-overlay">
-      <h1>Kimberly Talisse</h1>
-      <p class="typed-text"></p>
-      <span class="caption">*My trip to Brazil, March 2025</span>
-      <div class="scroll-down">&#8595;</div>
-    </div>
-  </section>
+        <!-- main banner section with provided photo backdrop -->
+        <div class="divMain "><!-- change source image in 'style.css -> div.Main class' -->
+            <!-- tag that overlays the backdrop with name and whatever else -->
+            <div class="divNameTag font-caviar">
+                <br>
+                <div class="font-caviar fontSize-2 margin-1">Kimberly Talisse</div>
+                <div class="font-caviar fontSize-1 margin-1">Syracuse University <br> Computer Engineering</div>
+            </div>
+            <!-- caption to explain photo -->
+            <div class="font-caviarItalic fontSize-1 margin-1 divCaption">*My trip to Brazil March 2025</div>
+        </div>
 
-  <section class="social-icons">
-    <a href="https://www.linkedin.com/in/kimberlytalisse/" target="_blank"><i class=""><img src="resources/linkedin.png" style="width: 4%;"></i></a>
-    <a style="position: absolute; left: 93%;" href="https://www.instagram.com/ktalisse05/?locale=kk-KZ" target="_blank"><i class=""><img src="resources/instagram.png" style="width: 62%"></i></a>
-    <a href="mailto:kimberly@example.com"><i class="fas fa-envelope"></i></a>
-  </section>
-
-  <section class="school-logo">
-    <a href="https://www.syracuse.edu/" target="_blank">
-      <img src="resources/Syracuse-Orange-Logo-2009.png" alt="Syracuse University Logo" />
-    </a>
-  </section>
-
-  <script>
-    const roles = ["Computer Engineer.", "Embedded Systems Dev.", "Robotics Enthusiast."];
-    let i = 0, j = 0, current = "", isDeleting = false;
-    const typedText = document.querySelector(".typed-text");
-
-    function type() {
-      if (i < roles.length) {
-        if (!isDeleting && j <= roles[i].length) {
-          current = roles[i].substring(0, j++);
-        } else if (isDeleting && j > 0) {
-          current = roles[i].substring(0, j--);
-        }
-
-        typedText.textContent = current;
-
-        if (!isDeleting && j === roles[i].length) {
-          isDeleting = true;
-          setTimeout(type, 1000);
-        } else if (isDeleting && j === 0) {
-          isDeleting = false;
-          i = (i + 1) % roles.length;
-          setTimeout(type, 200);
-        } else {
-          setTimeout(type, isDeleting ? 60 : 120);
-        }
-      }
-    }
-    type();
-  </script>
-</body>
+        <!-- spot to put school logo -->
+        <div class="divSchoolLogo">
+            <a class="aSchoolLogo" href="https://www.syracuse.edu/" target="_blank">
+                <img src="resources/Syracuse-Orange-Logo-2009.png" class="imgSchoolLogo">
+            </a>     
+        </div>   
+    </body>
 </html>
